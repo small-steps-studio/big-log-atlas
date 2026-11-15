@@ -1,0 +1,223 @@
+{
+  "name": "big-log-atlas",
+  "displayName": "Big Log Atlas",
+  "description": "Open multi-gigabyte log files without loading them: instant scrolling, search, filters, level colours, follow mode. Pro: JSON/logfmt/syslog/access-log columns, time jump, statistics, merge by time, export, anonymise. Works offline.",
+  "version": "0.1.0",
+  "publisher": "SmallStepsStudio",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "icon": "media/icon.png",
+  "pricing": "Trial",
+  "homepage": "https://github.com/small-steps-studio/big-log-atlas#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/small-steps-studio/big-log-atlas"
+  },
+  "bugs": {
+    "url": "https://github.com/small-steps-studio/big-log-atlas/issues"
+  },
+  "galleryBanner": {
+    "color": "#16283a",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "log viewer",
+    "large file",
+    "big file",
+    "huge log",
+    "log file",
+    "tail",
+    "follow log",
+    "log search",
+    "log filter",
+    "jsonl",
+    "ndjson",
+    "logfmt",
+    "syslog",
+    "access log",
+    "nginx log",
+    "log4j",
+    "logback",
+    "log statistics",
+    "merge logs",
+    "anonymise logs",
+    "multi gigabyte",
+    "support engineer",
+    "devops"
+  ],
+  "main": "./src/extension.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": false,
+      "description": "Big Log Atlas reads log files directly from the file system of the machine the editor runs on. Open a folder on a normal file system."
+    }
+  },
+  "activationEvents": [],
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "gate": "node scripts/release-gate.js",
+    "vscode:prepublish": "node scripts/release-gate.js --skip-tests --prepublish",
+    "package": "npx --yes @vscode/vsce package --no-dependencies",
+    "package:local": "node scripts/package-local.js",
+    "check-vsix": "node scripts/check-vsix.js"
+  },
+  "contributes": {
+    "commands": [
+      { "command": "bigLogAtlas.openLarge", "title": "Big Log Atlas: Open As Large Log" },
+      { "command": "bigLogAtlas.openSampleLog", "title": "Big Log Atlas: Open Sample Log" },
+      { "command": "bigLogAtlas.openSampleJson", "title": "Big Log Atlas: Open Sample JSON Lines Log" },
+      { "command": "bigLogAtlas.openWalkthrough", "title": "Big Log Atlas: Open Getting Started Guide" },
+      { "command": "bigLogAtlas.showDocumentation", "title": "Big Log Atlas: Show Documentation" },
+      { "command": "bigLogAtlas.reportProblem", "title": "Big Log Atlas: Report A Problem" },
+      { "command": "bigLogAtlas.goTo", "title": "Big Log Atlas: Go To Line, Percentage Or Byte Offset" },
+      { "command": "bigLogAtlas.find", "title": "Big Log Atlas: Find" },
+      { "command": "bigLogAtlas.findNext", "title": "Big Log Atlas: Find Next" },
+      { "command": "bigLogAtlas.findPrevious", "title": "Big Log Atlas: Find Previous" },
+      { "command": "bigLogAtlas.filterLevels", "title": "Big Log Atlas: Filter By Level" },
+      { "command": "bigLogAtlas.clearFilter", "title": "Big Log Atlas: Clear Filter" },
+      { "command": "bigLogAtlas.toggleFollow", "title": "Big Log Atlas: Follow File (Tail)" },
+      { "command": "bigLogAtlas.setEncoding", "title": "Big Log Atlas: Change Encoding" },
+      { "command": "bigLogAtlas.toggleBookmark", "title": "Big Log Atlas: Toggle Bookmark On Current Line" },
+      { "command": "bigLogAtlas.nextBookmark", "title": "Big Log Atlas: Go To Next Bookmark" },
+      { "command": "bigLogAtlas.previousBookmark", "title": "Big Log Atlas: Go To Previous Bookmark" },
+      { "command": "bigLogAtlas.copyLines", "title": "Big Log Atlas: Copy Selected Lines" },
+      { "command": "bigLogAtlas.buyPro", "title": "Big Log Atlas: Buy Pro" },
+      { "command": "bigLogAtlas.enterKey", "title": "Big Log Atlas: Enter Licence Key" },
+      { "command": "bigLogAtlas.licenceStatus", "title": "Big Log Atlas: Show Licence Status" },
+      { "command": "bigLogAtlas.removeLicence", "title": "Big Log Atlas: Remove Licence From This Machine" },
+      { "command": "bigLogAtlas.chooseProfile", "title": "Big Log Atlas: Choose Parse Profile (Pro)" },
+      { "command": "bigLogAtlas.fieldFilter", "title": "Big Log Atlas: Filter By Field (Pro)" },
+      { "command": "bigLogAtlas.timeFilter", "title": "Big Log Atlas: Filter By Time Range (Pro)" },
+      { "command": "bigLogAtlas.jumpToTime", "title": "Big Log Atlas: Jump To Time (Pro)" },
+      { "command": "bigLogAtlas.statistics", "title": "Big Log Atlas: Show Statistics (Pro)" },
+      { "command": "bigLogAtlas.mergeFiles", "title": "Big Log Atlas: Merge Log Files By Time (Pro)" },
+      { "command": "bigLogAtlas.saveFilter", "title": "Big Log Atlas: Save Current Filter (Pro)" },
+      { "command": "bigLogAtlas.applySavedFilter", "title": "Big Log Atlas: Apply Saved Filter (Pro)" },
+      { "command": "bigLogAtlas.highlightRules", "title": "Big Log Atlas: Edit Highlight Rules (Pro)" },
+      { "command": "bigLogAtlas.exportFiltered", "title": "Big Log Atlas: Export Filtered Lines (Pro)" },
+      { "command": "bigLogAtlas.exportAnonymised", "title": "Big Log Atlas: Export Anonymised Copy (Pro)" },
+      { "command": "bigLogAtlas.compareExcerpts", "title": "Big Log Atlas: Compare Two Log Excerpts (Pro)" }
+    ],
+    "menus": {
+      "explorer/context": [
+        { "command": "bigLogAtlas.openLarge", "when": "!explorerResourceIsFolder && resourceScheme == file", "group": "navigation@99" }
+      ]
+    },
+    "walkthroughs": [
+      {
+        "id": "bigLogAtlas.gettingStarted",
+        "title": "Get started with Big Log Atlas",
+        "description": "Open a sample log, search it, filter by level, follow a growing file and try the Pro tools with the free 14-day trial.",
+        "steps": [
+          {
+            "id": "bigLogAtlas.step.openSample",
+            "title": "Open a sample log",
+            "description": "Big Log Atlas opens log files of any size without loading them into memory. Open the short invented sample to follow along, or run \"Open As Large Log\" on one of your own files (also in the Explorer menu).\n[Open Sample Log](command:bigLogAtlas.openSampleLog)\n[Open As Large Log](command:bigLogAtlas.openLarge)",
+            "media": { "markdown": "media/walkthrough/open-sample.md" },
+            "completionEvents": ["onCommand:bigLogAtlas.openSampleLog", "onCommand:bigLogAtlas.openLarge"]
+          },
+          {
+            "id": "bigLogAtlas.step.search",
+            "title": "Search and jump",
+            "description": "Press Ctrl+F in the log to search text or a regular expression, F3 for the next match. Ctrl+G jumps to a line number, a percentage such as 50%, or a byte offset such as @1048576.\n[Go To Line, Percentage Or Byte Offset](command:bigLogAtlas.goTo)\n[Find](command:bigLogAtlas.find)",
+            "media": { "markdown": "media/walkthrough/search.md" },
+            "completionEvents": ["onCommand:bigLogAtlas.goTo", "onCommand:bigLogAtlas.find"]
+          },
+          {
+            "id": "bigLogAtlas.step.filter",
+            "title": "Filter by level or text",
+            "description": "Show only errors and warnings, or only the lines that match a text or regular expression. Filtered lines keep their real line numbers.\n[Filter By Level](command:bigLogAtlas.filterLevels)\n[Clear Filter](command:bigLogAtlas.clearFilter)",
+            "media": { "markdown": "media/walkthrough/filter.md" },
+            "completionEvents": ["onCommand:bigLogAtlas.filterLevels"]
+          },
+          {
+            "id": "bigLogAtlas.step.follow",
+            "title": "Follow a growing log",
+            "description": "Turn on follow mode to watch a file that is still being written, pause it to read, and bookmark lines you want to come back to.\n[Follow File (Tail)](command:bigLogAtlas.toggleFollow)\n[Toggle Bookmark On Current Line](command:bigLogAtlas.toggleBookmark)",
+            "media": { "markdown": "media/walkthrough/follow.md" },
+            "completionEvents": ["onCommand:bigLogAtlas.toggleFollow"]
+          },
+          {
+            "id": "bigLogAtlas.step.pro",
+            "title": "Columns and statistics (Pro trial)",
+            "description": "Open the JSON Lines sample, choose a parse profile to get columns and field filters, then show statistics. The first Pro command starts a free 14-day trial on this computer; no key, account or network is needed.\n[Open Sample JSON Lines Log](command:bigLogAtlas.openSampleJson)\n[Choose Parse Profile](command:bigLogAtlas.chooseProfile)\n[Show Statistics](command:bigLogAtlas.statistics)\n[Show Licence Status](command:bigLogAtlas.licenceStatus)",
+            "media": { "markdown": "media/walkthrough/pro.md" },
+            "completionEvents": ["onCommand:bigLogAtlas.chooseProfile", "onCommand:bigLogAtlas.statistics", "onCommand:bigLogAtlas.licenceStatus"]
+          }
+        ]
+      }
+    ],
+    "configuration": {
+      "title": "Big Log Atlas",
+      "properties": {
+        "bigLogAtlas.maxLineChars": {
+          "type": "integer",
+          "default": 2000,
+          "minimum": 200,
+          "maximum": 100000,
+          "order": 1,
+          "markdownDescription": "Characters of a line that are shown in the list. A longer line ends with a marker, and the details pane (select the line) shows more of it."
+        },
+        "bigLogAtlas.defaultEncoding": {
+          "type": "string",
+          "default": "auto",
+          "enum": ["auto", "utf8", "utf16le", "utf16be", "latin1"],
+          "enumDescriptions": [
+            "Detect the encoding from the byte order mark and the first bytes of the file.",
+            "UTF-8",
+            "UTF-16 little endian",
+            "UTF-16 big endian",
+            "Latin-1 (ISO 8859-1)"
+          ],
+          "order": 2,
+          "markdownDescription": "Encoding used when a log is opened. You can also change it for one log with **Big Log Atlas: Change Encoding**."
+        },
+        "bigLogAtlas.indexCache.maxMB": {
+          "type": "integer",
+          "default": 64,
+          "minimum": 0,
+          "maximum": 2048,
+          "order": 3,
+          "markdownDescription": "Largest total size, in megabytes, of the saved line indexes in the extension's storage folder. A saved index lets a log that has not changed open without scanning it again. The oldest indexes are deleted first. `0` turns the saved indexes off."
+        },
+        "bigLogAtlas.follow.intervalMs": {
+          "type": "integer",
+          "default": 500,
+          "minimum": 100,
+          "maximum": 10000,
+          "order": 4,
+          "markdownDescription": "How often follow mode looks for new lines, in milliseconds."
+        },
+        "bigLogAtlas.filter.maxMatches": {
+          "type": "integer",
+          "default": 2000000,
+          "minimum": 1000,
+          "maximum": 10000000,
+          "order": 5,
+          "markdownDescription": "Largest number of matching lines a filter keeps (about 8 bytes each). When a filter finds more, it stops and says so, so that a result is never silently incomplete."
+        },
+        "bigLogAtlas.colourLevels": {
+          "type": "boolean",
+          "default": true,
+          "order": 6,
+          "markdownDescription": "Colour lines by level (fatal, error, warning, info, debug, trace). Each level also has a letter in the margin, so colour is not the only cue."
+        },
+        "bigLogAtlas.export.neutraliseFormulas": {
+          "type": "boolean",
+          "default": true,
+          "order": 7,
+          "markdownDescription": "In CSV exports (Pro), put an apostrophe before every cell that starts with `=`, `+`, `-`, `@`, a tab or a carriage return, so that a spreadsheet shows it as text instead of running it as a formula. Turn off only when you need the exact values and open the files in a program that does not run formulas."
+        }
+      }
+    }
+  }
+}

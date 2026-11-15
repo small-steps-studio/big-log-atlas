@@ -1,0 +1,17 @@
+**
+!package.json
+!README.md
+!CHANGELOG.md
+!LICENSE.txt
+!TERMS.md
+!PRIVACY.md
+!src/*.js
+!src/engine/*.js
+!src/pro/*.js
+!src/licence/config.js
+!src/licence/licence.js
+!src/licence/messages.js
+!media/icon.png
+!media/webview/*
+!media/walkthrough/*.md
+src/licence/test-environment.js
