@@ -1,0 +1,12 @@
+2026/01/15 10:00:00 [error] 31#31: *100 event 0, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:01 [warn] 31#31: *101 event 1, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:02 [notice] 31#31: *102 event 2, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:03 [notice] 31#31: *103 event 3, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:04 [error] 31#31: *104 event 4, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:05 [warn] 31#31: *105 event 5, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:06 [notice] 31#31: *106 event 6, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:07 [notice] 31#31: *107 event 7, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:08 [error] 31#31: *108 event 8, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:09 [warn] 31#31: *109 event 9, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:10 [notice] 31#31: *110 event 10, client: 192.0.2.7, server: example.invalid
+2026/01/15 10:00:11 [notice] 31#31: *111 event 11, client: 192.0.2.7, server: example.invalid

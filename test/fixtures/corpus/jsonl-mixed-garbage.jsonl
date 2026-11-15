@@ -1,0 +1,6 @@
+{"ts":"2026-01-15T10:00:00Z","level":"info","msg":"ok"}
+{"ts":"2026-01-15T10:00:01Z","level":"warn","msg":"cut
+not json at all
+
+{"ts":"2026-01-15T10:00:03Z","level":"error","msg":"ok again"}
+[1,2,3]

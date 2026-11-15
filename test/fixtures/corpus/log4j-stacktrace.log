@@ -1,0 +1,52 @@
+2026-01-15 10:00:00,000 [pool-0] ERROR com.example.Job - step 0
+java.lang.IllegalStateException: step 0 failed
+	at com.example.Job.run(Job.java:40)
+	at com.example.Main.main(Main.java:12)
+2026-01-15 10:00:01,500 [pool-1] INFO  com.example.Job - step 1
+2026-01-15 10:00:03,000 [pool-2] INFO  com.example.Job - step 2
+2026-01-15 10:00:04,500 [pool-0] INFO  com.example.Job - step 3
+2026-01-15 10:00:06,000 [pool-1] INFO  com.example.Job - step 4
+2026-01-15 10:00:07,500 [pool-2] DEBUG com.example.Job - step 5
+2026-01-15 10:00:09,000 [pool-0] INFO  com.example.Job - step 6
+2026-01-15 10:00:10,500 [pool-1] WARN  com.example.Job - step 7
+2026-01-15 10:00:12,000 [pool-2] INFO  com.example.Job - step 8
+2026-01-15 10:00:13,500 [pool-0] INFO  com.example.Job - step 9
+2026-01-15 10:00:15,000 [pool-1] DEBUG com.example.Job - step 10
+2026-01-15 10:00:16,500 [pool-2] INFO  com.example.Job - step 11
+2026-01-15 10:00:18,000 [pool-0] INFO  com.example.Job - step 12
+2026-01-15 10:00:19,500 [pool-1] ERROR com.example.Job - step 13
+java.lang.IllegalStateException: step 13 failed
+	at com.example.Job.run(Job.java:53)
+	at com.example.Main.main(Main.java:12)
+2026-01-15 10:00:21,000 [pool-2] WARN  com.example.Job - step 14
+2026-01-15 10:00:22,500 [pool-0] DEBUG com.example.Job - step 15
+2026-01-15 10:00:24,000 [pool-1] INFO  com.example.Job - step 16
+2026-01-15 10:00:25,500 [pool-2] INFO  com.example.Job - step 17
+2026-01-15 10:00:27,000 [pool-0] INFO  com.example.Job - step 18
+2026-01-15 10:00:28,500 [pool-1] INFO  com.example.Job - step 19
+2026-01-15 10:00:30,000 [pool-2] DEBUG com.example.Job - step 20
+2026-01-15 10:00:31,500 [pool-0] WARN  com.example.Job - step 21
+2026-01-15 10:00:33,000 [pool-1] INFO  com.example.Job - step 22
+2026-01-15 10:00:34,500 [pool-2] INFO  com.example.Job - step 23
+2026-01-15 10:00:36,000 [pool-0] INFO  com.example.Job - step 24
+2026-01-15 10:00:37,500 [pool-1] DEBUG com.example.Job - step 25
+2026-01-15 10:00:39,000 [pool-2] ERROR com.example.Job - step 26
+java.lang.IllegalStateException: step 26 failed
+	at com.example.Job.run(Job.java:66)
+	at com.example.Main.main(Main.java:12)
+2026-01-15 10:00:40,500 [pool-0] INFO  com.example.Job - step 27
+2026-01-15 10:00:42,000 [pool-1] WARN  com.example.Job - step 28
+2026-01-15 10:00:43,500 [pool-2] INFO  com.example.Job - step 29
+2026-01-15 10:00:45,000 [pool-0] DEBUG com.example.Job - step 30
+2026-01-15 10:00:46,500 [pool-1] INFO  com.example.Job - step 31
+2026-01-15 10:00:48,000 [pool-2] INFO  com.example.Job - step 32
+2026-01-15 10:00:49,500 [pool-0] INFO  com.example.Job - step 33
+2026-01-15 10:00:51,000 [pool-1] INFO  com.example.Job - step 34
+2026-01-15 10:00:52,500 [pool-2] WARN  com.example.Job - step 35
+2026-01-15 10:00:54,000 [pool-0] INFO  com.example.Job - step 36
+2026-01-15 10:00:55,500 [pool-1] INFO  com.example.Job - step 37
+2026-01-15 10:00:57,000 [pool-2] INFO  com.example.Job - step 38
+2026-01-15 10:00:58,500 [pool-0] ERROR com.example.Job - step 39
+java.lang.IllegalStateException: step 39 failed
+	at com.example.Job.run(Job.java:79)
+	at com.example.Main.main(Main.java:12)

@@ -1,0 +1,5 @@
+2026-01-15T10:00:00Z INFO login ok user=ann.lee@example.invalid ip=192.0.2.44
+2026-01-15T10:00:01Z INFO login ok user=bob.ray@example.invalid ip=192.0.2.45 session=9f8e7d6c5b4a39281706f5e4d3c2b1a0
+2026-01-15T10:00:02Z WARN token rejected Bearer abcdEFGH12345678ijkl from 2001:db8:85a3:0:0:8a2e:370:7334
+2026-01-15T10:00:03Z INFO payment card 4111 1111 1111 1111 accepted for ann.lee@example.invalid
+2026-01-15T10:00:04Z ERROR customer CUST-482913 not found (api_key=sk-demo-1234567890abcdef)

@@ -1,0 +1,18 @@
+2026-01-15T10:00:00Z FATAL out of memory
+2026-01-15T10:00:01Z CRITICAL disk gone
+2026-01-15T10:00:02Z SEVERE lost quorum
+2026-01-15T10:00:03Z ERROR failed
+2026-01-15T10:00:04Z ERR short form
+2026-01-15T10:00:05Z WARNING slow
+2026-01-15T10:00:06Z WARN also slow
+2026-01-15T10:00:07Z NOTICE hello
+2026-01-15T10:00:08Z INFO fine
+2026-01-15T10:00:09Z DEBUG detail
+2026-01-15T10:00:10Z TRACE enter
+2026-01-15T10:00:11Z VERBOSE chatty
+{"ts":"2026-01-15T10:00:12Z","level":"error","msg":"json"}
+ts=2026-01-15T10:00:13Z level=warn msg="logfmt"
+2026/01/15 10:00:14 [crit] 1#1: boom
+2026/01/15 10:00:15 [info] 1#1: ok
+Error: starts the line
+the word error inside a sentence has no level

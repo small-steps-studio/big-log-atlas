@@ -1,0 +1,10 @@
+2026-01-15T10:00:00.000123456Z stdout F INFO container line 0
+2026-01-15T10:00:01.000123456Z stdout F INFO container line 1
+2026-01-15T10:00:02.000123456Z stdout F INFO container line 2
+2026-01-15T10:00:03.000123456Z stdout F INFO container line 3
+2026-01-15T10:00:04.000123456Z stdout F INFO container line 4
+2026-01-15T10:00:05.000123456Z stdout F ERROR container line 5
+2026-01-15T10:00:06.000123456Z stdout F INFO container line 6
+2026-01-15T10:00:07.000123456Z stdout F INFO container line 7
+2026-01-15T10:00:08.000123456Z stdout F INFO container line 8
+2026-01-15T10:00:09.000123456Z stdout F INFO container line 9

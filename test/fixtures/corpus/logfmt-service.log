@@ -1,0 +1,16 @@
+ts=2026-01-15T10:00:00.000Z level=error msg="event 0" user=u0 latency_ms=10
+ts=2026-01-15T10:00:01.000Z level=warn msg="event 1" user=u1 latency_ms=11
+ts=2026-01-15T10:00:02.000Z level=info msg="event 2" user=u2 latency_ms=12
+ts=2026-01-15T10:00:03.000Z level=info msg="event 3" user=u3 latency_ms=13
+ts=2026-01-15T10:00:04.000Z level=error msg="event 4" user=u4 latency_ms=14
+ts=2026-01-15T10:00:05.000Z level=warn msg="event 5" user=u0 latency_ms=15
+ts=2026-01-15T10:00:06.000Z level=info msg="event 6" user=u1 latency_ms=16
+ts=2026-01-15T10:00:07.000Z level=info msg="event 7" user=u2 latency_ms=17
+ts=2026-01-15T10:00:08.000Z level=error msg="event 8" user=u3 latency_ms=18
+ts=2026-01-15T10:00:09.000Z level=warn msg="event 9" user=u4 latency_ms=19
+ts=2026-01-15T10:00:10.000Z level=info msg="event 10" user=u0 latency_ms=20
+ts=2026-01-15T10:00:11.000Z level=info msg="event 11" user=u1 latency_ms=21
+ts=2026-01-15T10:00:12.000Z level=error msg="event 12" user=u2 latency_ms=22
+ts=2026-01-15T10:00:13.000Z level=warn msg="event 13" user=u3 latency_ms=23
+ts=2026-01-15T10:00:14.000Z level=info msg="event 14" user=u4 latency_ms=24
+ts=2026-01-15T10:00:15.000Z level=info msg="event 15" user=u0 latency_ms=25

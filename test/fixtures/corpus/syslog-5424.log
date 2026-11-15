@@ -1,0 +1,10 @@
+<165>1 2026-01-15T10:00:00.003Z host1 app 300 ID0 [meta@1 seq="0"] event 0
+<165>1 2026-01-15T10:00:01.003Z host1 app 301 ID1 [meta@1 seq="1"] event 1
+<165>1 2026-01-15T10:00:02.003Z host1 app 302 ID2 [meta@1 seq="2"] event 2
+<165>1 2026-01-15T10:00:03.003Z host1 app 303 ID3 [meta@1 seq="3"] event 3
+<165>1 2026-01-15T10:00:04.003Z host1 app 304 ID4 [meta@1 seq="4"] event 4
+<165>1 2026-01-15T10:00:05.003Z host1 app 305 ID5 [meta@1 seq="5"] event 5
+<165>1 2026-01-15T10:00:06.003Z host1 app 306 ID6 [meta@1 seq="6"] event 6
+<165>1 2026-01-15T10:00:07.003Z host1 app 307 ID7 [meta@1 seq="7"] event 7
+<165>1 2026-01-15T10:00:08.003Z host1 app 308 ID8 [meta@1 seq="8"] event 8
+<165>1 2026-01-15T10:00:09.003Z host1 app 309 ID9 [meta@1 seq="9"] event 9

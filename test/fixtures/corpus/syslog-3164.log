@@ -1,0 +1,15 @@
+<11>Jan 15 10:00:00 host1 daemon[200]: event 0
+<14>Jan 15 10:00:01 host1 daemon[201]: event 1
+<14>Jan 15 10:00:02 host1 daemon[202]: event 2
+<11>Jan 15 10:00:03 host1 daemon[203]: event 3
+<14>Jan 15 10:00:04 host1 daemon[204]: event 4
+<14>Jan 15 10:00:05 host1 daemon[205]: event 5
+<11>Jan 15 10:00:06 host1 daemon[206]: event 6
+<14>Jan 15 10:00:07 host1 daemon[207]: event 7
+<14>Jan 15 10:00:08 host1 daemon[208]: event 8
+<11>Jan 15 10:00:09 host1 daemon[209]: event 9
+<14>Jan 15 10:00:10 host1 daemon[210]: event 10
+<14>Jan 15 10:00:11 host1 daemon[211]: event 11
+<11>Jan 15 10:00:12 host1 daemon[212]: event 12
+<14>Jan 15 10:00:13 host1 daemon[213]: event 13
+<14>Jan 15 10:00:14 host1 daemon[214]: event 14

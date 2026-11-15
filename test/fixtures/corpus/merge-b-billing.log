@@ -1,0 +1,10 @@
+2026-01-15T10:00:01.000Z INFO  billing request 0
+2026-01-15T10:00:04.000Z INFO  billing request 1
+2026-01-15T10:00:07.000Z INFO  billing request 2
+2026-01-15T10:00:10.000Z INFO  billing request 3
+2026-01-15T10:00:13.000Z INFO  billing request 4
+2026-01-15T10:00:16.000Z ERROR billing request 5
+2026-01-15T10:00:19.000Z INFO  billing request 6
+2026-01-15T10:00:22.000Z INFO  billing request 7
+2026-01-15T10:00:25.000Z INFO  billing request 8
+2026-01-15T10:00:28.000Z INFO  billing request 9
